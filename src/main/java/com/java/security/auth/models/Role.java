@@ -25,7 +25,6 @@ public class Role {
 	}
 
 	public Role(ERole name) {
-		super();
 		this.name = name;
 	}
 

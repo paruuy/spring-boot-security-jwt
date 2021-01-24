@@ -55,6 +55,14 @@ public class UserDetailsImpl implements UserDetails {
 		return authorities;
 	}
 
+	public Long getId() {
+		return id;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
 	@Override
 	public String getPassword() {
 		return password;
@@ -64,14 +72,7 @@ public class UserDetailsImpl implements UserDetails {
 	public String getUsername() {
 		return username;
 	}
-	
-	public void setUsername(String username) {
-		this.username = username;
-	}
-	
-	public void setPassword(String password) {
-		this.password = password;
-	}
+
 	@Override
 	public boolean isAccountNonExpired() {
 		return true;
@@ -92,13 +93,6 @@ public class UserDetailsImpl implements UserDetails {
 		return true;
 	}
 
-	public String getEmail() {
-		return email;
-	}
-	public Long getId() {
-		return id;
-	}
-	
 	@Override
 	public boolean equals(Object o) {
 		if (this == o)
